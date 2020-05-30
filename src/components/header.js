@@ -1,42 +1,28 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import React from 'react'
+import { useTheme } from 'emotion-theming'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import Logo from './logo'
+import composeStyles from './headerStyles'
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+import NavigationLink from './navigationLink'
 
-Header.defaultProps = {
-  siteTitle: ``,
+const Header = () => {
+  const theme = useTheme()
+  const styles = composeStyles(theme)
+
+  return (
+    <header css={styles.root}>
+      <Link to="/" css={styles.logo} aria-label="Back to homepage"><Logo /></Link>
+      <nav>
+        <ul css={styles.navList}>
+          <li css={styles.navItem}><NavigationLink to="/designSystems/">Design Systems</NavigationLink></li>
+          <li css={styles.navItem}><NavigationLink to="/otherProjects/">Projects</NavigationLink></li>
+          <li css={styles.navItem}><NavigationLink to="/resume/">Resume</NavigationLink></li>
+        </ul>
+      </nav>
+    </header>
+  )
 }
 
 export default Header
