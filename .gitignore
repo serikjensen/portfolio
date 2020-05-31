@@ -67,3 +67,9 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# In dev mode, we serve the font via static instead of an s3 bucket. Ignore static for
+# now so that it doesn't push to GitHub
+static/
+
+
