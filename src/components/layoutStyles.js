@@ -4,7 +4,7 @@ export default ({ colors, typography }) => ({
   root: css`
     @font-face {
       font-family: 'Ageo';
-      src: url('${process.env.AGEO_FONT_URL}');
+      src: url('${process.env.GATSBY_AGEO_FONT_URL}');
     }
 
     body {
