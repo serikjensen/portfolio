@@ -19,8 +19,8 @@ const IndexPage = () => (
       linkText="My work with Design Systems"
     />
     <Blurb
-      heading={`I also make websites from the ground up`}
-      caption={`Creating things is something I deeply enjoy. I usually have something going on the side whether it's a local project or building the best colorized sudoku app on the internet.`}
+      heading={`I love working on websites`}
+      caption={`Creating things is a passion of mine. I usually have something going on the side whether it's a local project or building the best colorized sudoku app on the internet.`}
       href="/otherProjects/"
       linkText="Some of my favorite projects"
     />

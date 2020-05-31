@@ -3,6 +3,8 @@ import { useTheme } from 'emotion-theming'
 import { useStaticQuery, graphql } from 'gatsby'
 import { FaGithub, FaLinkedinIn, FaRegEnvelope } from 'react-icons/fa/index.esm.js'
 
+import Link from './link'
+
 import composeStyles from './footerStyles'
 
 const Footer = () => {
@@ -27,19 +29,26 @@ const Footer = () => {
     linkedIn
   } = data.site.siteMetadata
 
+  const linkProps = {
+    as: 'a',
+    color: 'primary-inverse',
+    css: styles.link,
+    target: '_blank'
+  }
+
   return (
     <div css={styles.root}>
       <footer css={styles.footer}>
         <address css={styles.address}>
-          <a css={styles.link} href={gitHub}>
+          <Link {...linkProps} href={gitHub}>
             <FaGithub css={styles.icon} />GitHub
-          </a>
-          <a css={styles.link} href={linkedIn}>
+          </Link>
+          <Link {...linkProps} href={linkedIn}>
             <FaLinkedinIn css={styles.icon} />LinkedIn
-          </a>
-          <a css={styles.link} href={`mailto:${email}`}>
+          </Link>
+          <Link {...linkProps} href={`mailto:${email}`}>
             <FaRegEnvelope css={styles.icon} />{email}
-          </a>
+          </Link>
         </address>
       </footer>
     </div>

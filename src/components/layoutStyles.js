@@ -14,7 +14,7 @@ export default ({ colors, typography }) => ({
       min-height: '100vh';
       max-width: '100vw';
       font-family: ${typography.fontFamilyHeading};
-      color: ${typography.dark};
+      color: ${typography.darkest};
       font-size: 1.125rem;
       line-height: 1.5;
     }

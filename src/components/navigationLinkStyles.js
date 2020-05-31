@@ -19,6 +19,10 @@ export default ({ colors, typography }) => ({
       text-decoration: underline;
     }
 
+    &:focus {
+      outline: 0.125rem solid ${colors.lightest};
+    }
+
     @media (max-width: 28.25em) {
       font-size: 1rem;
     }

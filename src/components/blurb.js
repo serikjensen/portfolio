@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import { useTheme } from 'emotion-theming'
+
+import Link from './link'
+
 import composeStyles from './blurbStyles'
 
 const Blurb = ({ heading, caption, background, href, linkText }) => {
@@ -21,17 +23,12 @@ const Blurb = ({ heading, caption, background, href, linkText }) => {
     textStyles
   ]
 
-  const linkStyles = [
-    styles.link,
-    textStyles
-  ]
-
   return (
     <div css={backgroundStyles}>
       <div css={styles.container}>
         <h2 css={headingStyles}>{heading}</h2>
         <p css={background !== 'primary' && textStyles}>{caption}</p>
-        <Link to={href} css={linkStyles}>{linkText}</Link>
+        <Link to={href} color={background === 'primary' ? 'primary' : 'primary-inverse'}>{linkText}</Link>
       </div>
     </div>
   )
