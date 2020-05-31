@@ -5,14 +5,18 @@ import { useTheme } from 'emotion-theming'
 import Badges from './badges'
 import composeStyles from './heroStyles'
 
-const Hero = ({ heading, caption }) => {
+const Hero = ({ caption }) => {
   const theme = useTheme()
   const styles = composeStyles(theme)
 
   return (
     <div css={styles.root}>
       <div css={styles.content}>
-        <h1>{heading}</h1>
+        <h1>
+          <span css={styles.hello}>Hello!</span>
+          <span css={styles.space}>&nbsp;</span>
+          <span>I&#39;m Steve Jensen</span>
+        </h1>
         <p>{caption}</p>
         <Badges />
       </div>
@@ -21,12 +25,10 @@ const Hero = ({ heading, caption }) => {
 }
 
 Hero.propTypes = {
-  heading: PropTypes.node,
   caption: PropTypes.node
 }
 
 Hero.defaultProps = {
-  heading: null,
   caption: null
 }
 

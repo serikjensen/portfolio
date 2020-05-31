@@ -11,5 +11,19 @@ export default ({ colors, backgrounds }) => ({
   content: css`
     text-align: center;
     max-width: 32rem;
+  `,
+  hello: css`
+    display: inline;
+
+    @media (max-width: 28.75em) {
+      display: block;
+    }
+  `,
+  space: css`
+    display: inline;
+
+    @media (max-width: 28.75em) {
+      display: none;
+    }
   `
 })

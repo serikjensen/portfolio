@@ -13,9 +13,9 @@ export default ({ colors }) => ({
     border-top: 1px solid ${colors.dark};
   `,
   item: css`
-    margin: 2rem;
+    margin: 1.5rem;
     text-align: center;
-    width: 5rem;
+    width: 6rem;
     flex-shrink: 0;
   `,
   icon: css`

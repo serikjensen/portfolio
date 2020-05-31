@@ -9,7 +9,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero
-      heading="Hello! I'm Steve Jensen"
       caption="I like helping designers and engineers build cool stuff that can be used by everyone."
     />
     <Blurb
@@ -28,7 +27,7 @@ const IndexPage = () => (
     <Blurb
       background="secondary-inverse"
       heading={`Get to know a little more about me`}
-      caption={`I hope you'll just stop by for coffee, but here's a more formal introduction featuring my work history if you can't make it. Believe me, the coffee would be more fun.`}
+      caption={`I work full-time remote from the beautiful Flint Hills in Manhattan Kansas. It's a little out of the way, but I hope you'll swing by for coffee sometime. Here's a more formal introduction featuring my work history if you can't make it.`}
       href="/resume/"
       linkText="My bio and resume"
     />
