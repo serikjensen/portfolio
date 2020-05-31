@@ -4,7 +4,7 @@ export default ({ colors, typography }) => ({
   root: css`
     @font-face {
       font-family: 'Ageo';
-      src: url('https://serikjensen.s3.us-east-2/Ageo.otf');
+      src: url('https://serikjensen.s3.amazonaws.com/Ageo.otf');
     }
 
     body {
