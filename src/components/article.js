@@ -11,7 +11,7 @@ const Article = ({ children }) => {
   return (
     <div css={styles.root}>
       <div css={styles.content}>
-        <div>
+        <div css={styles.children}>
           {children}
         </div>
       </div>

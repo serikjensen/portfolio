@@ -44,6 +44,8 @@ export default ({ colors, typography }) => ({
     h3 {
       font-family: ${typography.fontFamilyHeading};
       color: ${colors.primary};
+      font-weight: bold;
+      margin-bottom: 0;
     }
 
     h4 {
