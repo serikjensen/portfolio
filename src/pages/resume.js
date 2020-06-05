@@ -8,6 +8,7 @@ const ResumePage = () => (
     <SEO title="Resume" />
     <Article>
       <h1>Work history</h1>
+      <h2>Experience</h2>
       <ul>
         <li>
           Instructure - Salt Lake City, Utah
@@ -33,6 +34,16 @@ const ResumePage = () => (
           CS256 Designing the User Experience - Provo, Utah
           <ul>
             <li>Teaching Assistant | January 2016 – April 2016</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          Bachelor of Science in Computer Science | April 2016
+          <ul>
+            <li>Brigham Young University</li>
+            <li>3.76 GPA</li>
           </ul>
         </li>
       </ul>
