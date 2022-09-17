@@ -14,6 +14,6 @@ export default {
   },
   typography: {
     fontFamilyHeading: `"Ageo", Helvetica Neue, Helvetica,Arial, sans-serif`,
-    fontFamilyBody: `"Book Antiqua", "Palatino Linotype", Georgia, serif`
+    fontFamilyBody: `"Ageo", Helvetica Neue, Helvetica,Arial, sans-serif`
   }
 }

@@ -11,6 +11,13 @@ const ResumePage = () => (
       <h2>Experience</h2>
       <ul>
         <li>
+          Vivian - Denver, Colorado 
+          <ul>
+            <li>Lead UX Engineer | July 2021 – Present</li>
+            <li>UX Engineer | August 2020 – July 2021</li>
+          </ul>
+        </li>
+        <li>
           Instructure - Salt Lake City, Utah
           <ul>
             <li>Senior UI Developer | March 2020 – Present</li>
@@ -43,7 +50,6 @@ const ResumePage = () => (
           Bachelor of Science in Computer Science | April 2016
           <ul>
             <li>Brigham Young University</li>
-            <li>3.76 GPA</li>
           </ul>
         </li>
       </ul>

@@ -19,7 +19,11 @@ const DesignSystemsPage = () => (
     <SEO title="Design Systems" />
     <Article>
       <h1>Design Systems</h1>
-      <Note>This page is under construction! One day it will lead you to lengthy descriptions of projects and beautiful illustrations. For now, it's pretty basic.</Note>
+      <h2>Vivian</h2>
+      <Note><b>Note:</b> Vivian is a private repo so I am unable to show you quite as much of the source code compared to Instructure which is open source.</Note>
+      <br />
+      <p>I was hired at Vivian as the first UX Engineer, charged with implementing a design system for a startup that helps healthcare professionals find work. With sustained success saving developers time, standardizing UI, and expediting feature work, the company allocated more and more resources. Today, our UX Engineering team is composed of four full time developers maintaining components across both web and mobile platforms.</p>
+      <Link as="a" target="_blank" href="https://vivian-storybook.s3.amazonaws.com/master/index.html">Storybook docs for our design system at Vivian</Link>
       <h2>Instructure UI</h2>
       <p>While working at Instructure, a Salt Lake based education technology company, I helped build our in-house design system. <Link target="_blank" as="a" href="https://instructure.design/">Instructure UI</Link> is now used by hundreds of engineers and millions of users daily.</p>
       <h3>Components</h3>
@@ -96,7 +100,7 @@ const DesignSystemsPage = () => (
           <b>ScreenReaderFocusRegion</b>
           <ul>
             <li><InstDocsLink href="ScreenReaderFocusRegion">Documentation</InstDocsLink></li>
-            <li><InstGitHubLink href="ui-a11y-utils/src/ScreenReaderFocusRegion.js">Source Code</InstGitHubLink></li>
+            <li><InstGitHubLink href="ui-a11y-utils/src/ScreenReaderFocusRegion.ts">Source Code</InstGitHubLink></li>
           </ul>
         </li>
       </ul>
@@ -114,21 +118,17 @@ const DesignSystemsPage = () => (
           <b>Prop Name Codemods</b> - I enhanced these to allow for swapping of values, for example changing an enum value of `red` to a boolean value of `true` etc.
           <ul>
             <li><InstDocsLink href="ui-codemods">Documentation</InstDocsLink></li>
-            <li><InstGitHubLink href="ui-codemods/lib/helpers/replaceDeprecatedProps.js">Source Code</InstGitHubLink></li>
+            <li><InstGitHubLink href="ui-codemods/lib/helpers/replaceDeprecatedProps.ts">Source Code</InstGitHubLink></li>
           </ul>
         </li>
         <li>
           <b>Import Codemods</b> - This allowed us to migrate consumers from default imports to es style named imports.
           <ul>
             <li><InstDocsLink href="ui-codemods">Documentation</InstDocsLink></li>
-            <li><InstGitHubLink href="ui-codemods/lib/helpers/replaceDeprecatedImports.js">Source Code</InstGitHubLink></li>
+            <li><InstGitHubLink href="ui-codemods/lib/helpers/replaceDeprecatedImports.ts">Source Code</InstGitHubLink></li>
           </ul>
         </li>
       </ul>
-      <h2>Relevate</h2>
-      <p>It is quite humble, but I learned so much on this project I have to at least mention it. A local non-profit here at Kansas State University was looking for UI help on their <Link as="a" href="http://myrelevate.com" target="_blank">website</Link>.</p>
-      <p>I created <Link as="a" href="https://www.myrelevate.com/styleguide/" target="_blank">a small design system</Link> to help scale UI decisions and keep things consistent. I have learned a lot since working on this in past years so don't judge too harshly :) There were some unique challenges integrating components with django, and I ended up creating a custom template tag process that was able to encapsulate markup, styles, and js and deliver it consistently across the site.</p>
-      <p>You can see the source for it <Link as="a" href="https://github.com/jhock/Relevate/tree/master/relevate_web_app/apps/components" target="_blank">here</Link>.</p>
     </Article>
   </Layout>
 )

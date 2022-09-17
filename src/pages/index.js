@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Blurb
       background="primary-inverse"
       heading={`Solving problems with systems`}
-      caption={`Over the past four years I have helped to grow a React based component library from a Spinner, TabList, and a couple of Buttons to a world-class design system used daily by hundreds of engineers and millions of users.`}
+      caption={`Over the past six years I have helped build React based design systems at multiple companies with components used daily by hundreds of engineers and millions of users.`}
       href="/designSystems/"
       linkText="My work with Design Systems"
     />
@@ -27,7 +27,7 @@ const IndexPage = () => (
     <Blurb
       background="secondary-inverse"
       heading={`Get to know a little more about me`}
-      caption={`I work full-time remote from the beautiful Flint Hills in Manhattan Kansas. It's a little out of the way, but I hope you'll swing by for coffee sometime. Here's a more formal introduction featuring my work history if you can't make it.`}
+      caption={`I work full-time from beautiful Denver Colorado. I hope you'll swing by for coffee sometime. Here's a more formal introduction featuring my work history if you can't make it.`}
       href="/resume/"
       linkText="My bio and resume"
     />
