@@ -20,7 +20,7 @@ const ResumePage = () => (
         <li>
           Instructure - Salt Lake City, Utah
           <ul>
-            <li>Senior UI Developer | March 2020 – Present</li>
+            <li>Senior UI Developer | March 2020 – July 2020</li>
             <li>UI Developer | May 2016 – March 2020</li>
             <li>UX Intern | May 2015 – August 2015</li>
           </ul>
